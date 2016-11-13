@@ -1,0 +1,37 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-button/paper-button.html" />
+
+<!--
+`<eric-test1></eric-test1>`
+This is my awesome test component
+@demo
+@demo demo/index.html
+@demo path/to/demo1.html  Super cool demo, with sharks!
+-->
+<dom-module id="eric-test1">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+    <paper-button raised class="custom pink">click me</paper-button>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'eric-test1',
+
+      properties: {
+        /** Prop 1 is so great*/
+        prop1: {
+          type: String,
+          value: 'eric-test1',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
